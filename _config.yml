@@ -1,0 +1,59 @@
+
+# SEO settings
+title: "Rajika's"
+title2: "Adventures" # default: ""
+description: "personal blog"
+keywords: "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
+url: http://rajikaimal.github.io # site url
+baseurl: "/" # apply repo name if use it under gh-pages branch
+# baseurl: null # apply null if repo name is something like username.github.io
+
+google_analytics: UA-XXXXX-XX
+repo: http://rajikaimal.com/heiswayi/thinkspace
+disqus_shortname: "heiswayi"
+twitter_username: "HeiswayiNrird"
+comments: true
+
+# Build settings
+permalink   : /:year/:title/
+markdown    : kramdown
+highlighter : rouge
+
+source: ./
+destination: ./_site
+
+# Sass configuration
+sass:
+  sass_dir: assets/scss
+  style: compressed # expanded
+
+# Author settings
+author:
+  name     : "Rajika Imal"
+  job      : "Software Engineer"
+  bio      : "JavaScript lover, interested in functional programming"
+  thumb    : /images/author.jpg
+  email    : inbox.rajika@gmail.com
+  url      : http://rajikaimal.github.io
+  github   : http://github.com/rajikaimal
+  twitter  : http://twitter.com/rajikaimal
+  facebook : https://www.facebook.com/rajikaximal
+  linkedin : http://linkedin.com/in/rajikaimal
+
+# social settings
+og_locale: "en_US"
+twitter_card: "summary_large_image"
+twitter_site: "@rajikaimal"
+
+gems:
+  - bourbon
+  - jekyll-paginate
+
+# navbar pages
+navbar:
+  - slug : about
+    title: About
+  - slug : blog
+    title: Blog
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
